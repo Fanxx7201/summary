@@ -36,47 +36,47 @@
 3. exist: 检查key是否存在(注意使用的问题???)
 4. del: 删除指定key
 5. ttl: 查看key剩余过期时间
-6. persist key: 去掉key的过期时间
-7. type: 查看key是哪种数据类型
-* Redis 的数据结构和内部编码
-> redis内部实现的数据结构, 和我们外部了解的不一样. redis内部通过redisObject结构体进行转换
-* Redis 单线程
-> redis在一个瞬间, 只会执行一个命令, 单线程执行的.
+6. persist key: 去掉key的过期时间  
+7. type: 查看key是哪种数据类型  
+* Redis 的数据结构和内部编码  
+> redis内部实现的数据结构, 和我们外部了解的不一样. redis内部通过redisObject结构体进行转换  
+* Redis 单线程  
+> redis在一个瞬间, 只会执行一个命令, 单线程执行的.  
 * Redis单线程为什么很快?
-> 主要原因是纯内存
-> 非阻塞IO
-> 避免线程换和竞态消耗.
+> 主要原因是纯内存  
+> 非阻塞IO  
+> 避免线程换和竞态消耗.  
 ---
 ## Redis数据结构
 注: 每种数据类型,从以下4个维度进行①结构与命令②内部编码③快速实战④命令查漏补缺
 * Redis数据结构之String字符串
 1. 键值结构
-> 字符串的value不能大于512m, 一般建议在100k以内, 太大影响效率      
+> 字符串的value不能大于512m, 一般建议在100k以内, 太大影响效率       
 2. 场景
-> 缓存, 计数, 分布式锁等  
+> 缓存, 计数, 分布式锁等   
 3. 命令
 > get: 获取key对应的value   
-> set: 设置key-value, 不管key是否存在都设置  
-> setnx: key不存在, 才设置  
-> set key value xx: key存在, 才设置, 相当于update  
-> mset, mget: 批量操作
-> del: 删除key-value   
-> incr: 自增1
-> decr: 自减1
-> incrby: 自增k.
-> decrby: 自减k.
-> getset: set key newvalue 并返回旧的value  
-> append: 将value追加到旧的value  
-> strlen: 返回字符串的长度  
-> incrbyfloat key 3.5: 增加key对应的值3.5  
+> set: 设置key-value, 不管key是否存在都设置   
+> setnx: key不存在, 才设置   
+> set key value xx: key存在, 才设置, 相当于update   
+> mset, mget: 批量操作  
+> del: 删除key-value    
+> incr: 自增1  
+> decr: 自减1  
+> incrby: 自增k.  
+> decrby: 自减k.  
+> getset: set key newvalue 并返回旧的value   
+> append: 将value追加到旧的value    
+> strlen: 返回字符串的长度   
+> incrbyfloat key 3.5: 增加key对应的值3.5   
 
-* Redis数据结构之hash
-1. 键值结构. key field value 结构. 相当于对象, field不能相同, value可以相同.
-> key: 键
-> field: 属性 
-> value: 值
+* Redis数据结构之hash  
+1. 键值结构. key field value 结构. 相当于对象, field不能相同, value可以相同.  
+> key: 键   
+> field: 属性  
+> value: 值  
 2. 场景
-> 在redis中保存对象.
+> 在redis中保存对象.  
 3. 命令
 > hget key field: 获取hash key对应field的value  
 > hset key field value: 设置hash key 对应field的value  
