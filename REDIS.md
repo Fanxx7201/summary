@@ -87,6 +87,17 @@
 
 * Redis数据结构之list
 1. 特点: 有序, 可以重复, 左右两边插入弹出.  
+2. 场景
+> redis中保存数据到集合, 比如微博按照时间列表进行排序 
+3. 命令
+> rpush key value1 value2 value3... valueN: 从列表右端插入值(1-N)  
+> lpush key value1 value2 value3... valueN: 从列表左端插入值(1-N)  
+> linsert key before|after value newValue: 在list指定的值前后插入newValue   
+> rpop key: 从列表右侧弹出一个item  
+> lrem key count value: 根据count的值, 删除所有value相等的元素    
+> ltrim key start end: 按照索引范围修剪列表  
+> lrange key start end(包含end): 获取列表指定索引范围所有item   
 
-
+* Redis数据结构之set
+1. 特点: 无序, 无重复, 集合间操作.  
 
