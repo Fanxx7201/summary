@@ -21,6 +21,8 @@
 ### 2.2索引的数据结构?
 * 生成索引, 建立二叉查找树进行二分查找.
 * 生成索引, 建立B-Tree结构进行查找
+> 平衡多路查找树, 
+![Image text](https://github.com/Fanxx7201/summary/blob/master/img/B-Tree.png)
 * 生成索引, 建立B+-Tree结构进行查找
 * 生成索引, 建立Hash结构进行查找
 
