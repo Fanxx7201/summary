@@ -48,8 +48,8 @@
 > 避免线程换和竞态消耗.  
 ---
 ## Redis数据结构
-注: 每种数据类型,从以下4个维度进行①结构与命令②内部编码③快速实战④命令查漏补缺
-* Redis数据结构之String字符串
+注: 每种数据类型,从以下4个维度进行①结构与命令②内部编码③快速实战④命令查漏补缺  
+* Redis数据结构之String字符串  
 1. 键值结构
 > 字符串的value不能大于512m, 一般建议在100k以内, 太大影响效率       
 2. 场景
@@ -85,10 +85,11 @@
 > hlen key: 获取hash key field 的数量  
 > hmget key field1 field2... 批量获取hash key 的一批field对应的值  
 
-* Redis数据结构之list
+* Redis数据结构之list  
 1. 特点: 有序, 可以重复, 左右两边插入弹出.  
 2. 场景
-> redis中保存数据到集合, 比如微博按照时间列表进行排序 
+
+> redis中保存数据到集合, 比如微博按照时间列表进行排序  
 3. 命令
 > rpush key value1 value2 value3... valueN: 从列表右端插入值(1-N)  
 > lpush key value1 value2 value3... valueN: 从列表左端插入值(1-N)  
