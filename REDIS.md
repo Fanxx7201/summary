@@ -131,11 +131,23 @@
 > 拓展: 如何实现故障转移? 
 > 首先, 客户端要选择一个slave , 执行命令slaveof no one, 让他成为一个master.对其余的slave执行slaveof new master 命令.问题就是这个故障转移是完全依赖手工去完成.
   有几个点很复杂:
-  1.怎么判断节点出问题, 
-  2.怎么通知客户端, 
+  1.怎么判断节点出问题. 
+  2.怎么通知客户端. 
   3.怎么保证事务. 
 
 ---
 ## Redis Sentinel
+* Redis Sentinel架构
+1. 主从结构, 有许多的sentinel节点, sentinel节点可以判断当前redis的状态
+2. 客户端并不关心谁是master, master挂掉了, sentienl会自动更换一个master, 客户端直接对新的master进行操作.
+3. 很多个sentinel节点的原因也是高可用, 一个挂掉了, 还有其他sentinel节点
+
+* sentinel故障转移原理
+1. 多个sentinel发现并确认master有问题
+2. 选举出一个sentinel作为领导
+3. 选出一个slave作为master
+4. 通知其余的slave成为新master的slave
+5. 通知客户端主从变化
+6. 等待老的master复活成为新的master的slave
 
 
