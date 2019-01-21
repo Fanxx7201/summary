@@ -22,3 +22,28 @@
 ### IOC的好处?
 * 主要目的就是为了解耦.
 * IOC的底层实现原理就是反射.
+
+### Spring源码一定要看
+
+### Spring框架说明
+* Test: 单元测试
+* core container: Spring核心容器. 四部分是四个jar包. 要想使用spring核心容器最少要4个jar包
+* AOP: 面向切面编程
+* Data:
+    > JDBC: Spring 有自己的对jdbc的一套封装
+    > ORM: Spring对ORM的封装. Hibernate只是其中的一个.
+    > JMS: 中间件
+
+
+
+
+
+
+
+
+
+
+
+
+
+
