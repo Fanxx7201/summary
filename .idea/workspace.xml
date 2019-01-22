@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c03b54e8-9d5e-4ac1-bd34-c965bdecbb28" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JVM.md" beforeDir="false" afterPath="$PROJECT_DIR$/JVM.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javabasic/src/com/javabasic/reflect/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabasic/src/com/javabasic/reflect/Robot.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="F:/ct/target/" />
@@ -46,8 +46,9 @@
           <entry key="SPRINGMVC" value="1" />
           <entry key="iml" value="1" />
           <entry key="ini" value="1" />
-          <entry key="java" value="14" />
+          <entry key="java" value="15" />
           <entry key="md" value="18" />
+          <entry key="png" value="1" />
           <entry key="properties" value="1" />
           <entry key="xml" value="6" />
         </counts>
@@ -55,7 +56,8 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="14" />
+          <entry key="Image" value="1" />
+          <entry key="JAVA" value="15" />
           <entry key="Markdown" value="18" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Properties" value="1" />
@@ -65,16 +67,16 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="ini" value="70" />
-          <entry key="java" value="2513" />
-          <entry key="md" value="9713" />
+          <entry key="java" value="2701" />
+          <entry key="md" value="11009" />
           <entry key="txt" value="85" />
           <entry key="xml" value="188" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2513" />
-          <entry key="Markdown" value="9713" />
+          <entry key="JAVA" value="2701" />
+          <entry key="Markdown" value="11009" />
           <entry key="PLAIN_TEXT" value="155" />
           <entry key="XML" value="188" />
         </counts>
@@ -87,8 +89,8 @@
         <entry file="file://$PROJECT_DIR$/SHIRO.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="275">
-                <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+              <first_editor relative-caret-position="200">
+                <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="77" />
               </first_editor>
               <second_editor />
             </state>
@@ -99,8 +101,8 @@
         <entry file="file://$PROJECT_DIR$/SPRINGMVC.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="250">
-                <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+              <first_editor relative-caret-position="775">
+                <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
               </first_editor>
               <second_editor />
             </state>
@@ -111,7 +113,7 @@
         <entry file="file://$PROJECT_DIR$/REDIS.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="3875">
+              <first_editor relative-caret-position="456">
                 <caret line="155" column="22" selection-start-line="155" selection-start-column="22" selection-end-line="155" selection-end-column="22" />
               </first_editor>
               <second_editor />
@@ -123,8 +125,8 @@
         <entry file="file://$PROJECT_DIR$/JVM.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="300">
-                <caret line="39" selection-start-line="39" selection-end-line="39" />
+              <first_editor relative-caret-position="431">
+                <caret line="97" column="49" selection-start-line="97" selection-start-column="49" selection-end-line="97" selection-end-column="49" />
               </first_editor>
               <second_editor />
             </state>
@@ -132,10 +134,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javabasic/src/com/javabasic/reflect/loadDiff.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javabasic/src/com/javabasic/reflect/Robot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="39" lean-forward="true" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+            <state>
+              <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="29" />
               <folding>
                 <element signature="e#297#298#0" expanded="true" />
                 <element signature="e#349#350#0" expanded="true" />
@@ -149,8 +160,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javabasic/src/com/javabasic/reflect/ReflectSample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="19" column="57" lean-forward="true" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
+            <state relative-caret-position="375">
+              <caret line="30" column="43" lean-forward="true" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -208,9 +219,10 @@
         <option value="$PROJECT_DIR$/shiro-web/pom.xml" />
         <option value="$PROJECT_DIR$/SHIRO.md" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/JVM.md" />
-        <option value="$PROJECT_DIR$/javabasic/src/com/javabasic/reflect/Robot.java" />
         <option value="$PROJECT_DIR$/javabasic/src/com/javabasic/reflect/ReflectSample.java" />
+        <option value="$PROJECT_DIR$/javabasic/src/com/javabasic/reflect/Robot.java" />
+        <option value="$PROJECT_DIR$/javabasic/src/com/javabasic/reflect/loadDiff.java" />
+        <option value="$PROJECT_DIR$/JVM.md" />
       </list>
     </option>
   </component>
@@ -507,6 +519,15 @@
               <item name="javabasic" type="462c0819:PsiDirectoryNode" />
               <item name="bytecode" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="sum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sum" type="462c0819:PsiDirectoryNode" />
+              <item name="javabasic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="javabasic" type="462c0819:PsiDirectoryNode" />
+              <item name="reflect" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -522,7 +543,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548134000929" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548148741045" />
     <property name="last_opened_file_path" value="F:/ct" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -552,7 +573,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ReflectSample">
+  <component name="RunManager" selected="Application.loadDiff">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -579,25 +600,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main1" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+    <configuration name="loadDiff" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.javabasic.reflect.loadDiff" />
+      <module name="javabasic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.javabasic.reflect.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AuthenticationTest.testAuthentication" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="shiro" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.im.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.im.test" />
-      <option name="MAIN_CLASS_NAME" value="com.im.test.AuthenticationTest" />
-      <option name="METHOD_NAME" value="testAuthentication" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+    <configuration name="main1" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -686,19 +704,19 @@
     <list>
       <item itemvalue="Application.main1" />
       <item itemvalue="Spring Boot.CenterApplication" />
-      <item itemvalue="JUnit.AuthenticationTest.testAuthentication" />
       <item itemvalue="JUnit.AuthorizerTest.testAuthentication" />
       <item itemvalue="JUnit.IniRealmTest.testAuthentication" />
       <item itemvalue="JUnit.CustomeRealmTest.testAuthentication" />
       <item itemvalue="Application.ReflectSample" />
+      <item itemvalue="Application.loadDiff" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.loadDiff" />
         <item itemvalue="Application.ReflectSample" />
         <item itemvalue="JUnit.CustomeRealmTest.testAuthentication" />
         <item itemvalue="JUnit.IniRealmTest.testAuthentication" />
         <item itemvalue="JUnit.AuthorizerTest.testAuthentication" />
-        <item itemvalue="JUnit.AuthenticationTest.testAuthentication" />
       </list>
     </recent_temporary>
   </component>
@@ -730,7 +748,7 @@
       <workItem from="1547600802800" duration="27169000" />
       <workItem from="1547775694672" duration="7922000" />
       <workItem from="1548032319634" duration="10522000" />
-      <workItem from="1548119487230" duration="7784000" />
+      <workItem from="1548119487230" duration="17299000" />
     </task>
     <task id="LOCAL-00001" summary="redis">
       <created>1545786874226</created>
@@ -900,7 +918,14 @@
       <option name="project" value="LOCAL" />
       <updated>1548060334737</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="JVM底层原理">
+      <created>1548134199101</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1548134199101</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -933,11 +958,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157805000" />
+    <option name="totallyTimeSpent" value="167320000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-189" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20895523" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1113,37 +1137,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SHIRO.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="275">
-            <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SPRINGMVC.md">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="250">
-            <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/REDIS.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="3875">
-            <caret line="155" column="22" selection-start-line="155" selection-start-column="22" selection-end-line="155" selection-end-column="22" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LINUX.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1169,20 +1162,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SHIRO.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="200">
+            <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="77" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SPRINGMVC.md">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="775">
+            <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/REDIS.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="456">
+            <caret line="155" column="22" selection-start-line="155" selection-start-column="22" selection-end-line="155" selection-end-column="22" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/javabasic/src/com/javabasic/reflect/ReflectSample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" column="57" lean-forward="true" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
+        <state relative-caret-position="375">
+          <caret line="30" column="43" lean-forward="true" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/img/classloader.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/javabasic/src/com/javabasic/reflect/Robot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="39" lean-forward="true" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        <state>
+          <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="29" />
           <folding>
             <element signature="e#297#298#0" expanded="true" />
             <element signature="e#349#350#0" expanded="true" />
@@ -1192,11 +1219,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/javabasic/src/com/javabasic/reflect/loadDiff.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/JVM.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="300">
-            <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <first_editor relative-caret-position="431">
+            <caret line="97" column="49" selection-start-line="97" selection-start-column="49" selection-end-line="97" selection-end-column="49" />
           </first_editor>
           <second_editor />
         </state>

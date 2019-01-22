@@ -18,4 +18,8 @@ public class Robot {
     private String throwHello(String tag){
         return "hello" + tag;
     }
+
+    static{
+        System.out.println("Hello Robot");
+    }
 }
