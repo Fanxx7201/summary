@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c03b54e8-9d5e-4ac1-bd34-c965bdecbb28" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/img/JVM内存模型.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/classloader.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/类的装载过程.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javabasic/src/com/javabasic/jvm/model/Fibonacci.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javabasic/src/com/javabasic/reflect/loadDiff.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JVM.md" beforeDir="false" afterPath="$PROJECT_DIR$/JVM.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javabasic/src/com/javabasic/reflect/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/javabasic/src/com/javabasic/reflect/Robot.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="F:/ct/target/" />
@@ -46,8 +50,8 @@
           <entry key="SPRINGMVC" value="1" />
           <entry key="iml" value="1" />
           <entry key="ini" value="1" />
-          <entry key="java" value="15" />
-          <entry key="md" value="18" />
+          <entry key="java" value="16" />
+          <entry key="md" value="19" />
           <entry key="png" value="1" />
           <entry key="properties" value="1" />
           <entry key="xml" value="6" />
@@ -57,8 +61,8 @@
         <counts>
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="15" />
-          <entry key="Markdown" value="18" />
+          <entry key="JAVA" value="16" />
+          <entry key="Markdown" value="19" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Properties" value="1" />
           <entry key="XML" value="6" />
@@ -68,7 +72,7 @@
         <counts>
           <entry key="ini" value="70" />
           <entry key="java" value="2701" />
-          <entry key="md" value="11009" />
+          <entry key="md" value="11507" />
           <entry key="txt" value="85" />
           <entry key="xml" value="188" />
         </counts>
@@ -76,7 +80,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="2701" />
-          <entry key="Markdown" value="11009" />
+          <entry key="Markdown" value="11507" />
           <entry key="PLAIN_TEXT" value="155" />
           <entry key="XML" value="188" />
         </counts>
@@ -121,23 +125,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JVM.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="431">
-                <caret line="97" column="49" selection-start-line="97" selection-start-column="49" selection-end-line="97" selection-end-column="49" />
+              <first_editor relative-caret-position="517">
+                <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javabasic/src/com/javabasic/reflect/loadDiff.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/javabasic/src/com/javabasic/jvm/model/Fibonacci.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="250">
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -145,8 +149,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javabasic/src/com/javabasic/reflect/Robot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="29" />
+            <state relative-caret-position="132">
+              <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
               <folding>
                 <element signature="e#297#298#0" expanded="true" />
                 <element signature="e#349#350#0" expanded="true" />
@@ -160,8 +164,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javabasic/src/com/javabasic/reflect/ReflectSample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="30" column="43" lean-forward="true" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+            <state relative-caret-position="507">
+              <caret line="27" column="37" lean-forward="true" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -183,7 +187,7 @@
         <entry file="file://$PROJECT_DIR$/DB.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="442">
+              <first_editor relative-caret-position="1192">
                 <caret line="105" column="29" lean-forward="true" selection-start-line="105" selection-start-column="29" selection-end-line="105" selection-end-column="29" />
               </first_editor>
               <second_editor />
@@ -526,6 +530,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="javabasic" type="462c0819:PsiDirectoryNode" />
+              <item name="jvm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sum" type="462c0819:PsiDirectoryNode" />
+              <item name="javabasic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="javabasic" type="462c0819:PsiDirectoryNode" />
               <item name="reflect" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -543,7 +556,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548148741045" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548225358340" />
     <property name="last_opened_file_path" value="F:/ct" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -748,7 +761,7 @@
       <workItem from="1547600802800" duration="27169000" />
       <workItem from="1547775694672" duration="7922000" />
       <workItem from="1548032319634" duration="10522000" />
-      <workItem from="1548119487230" duration="17299000" />
+      <workItem from="1548119487230" duration="21682000" />
     </task>
     <task id="LOCAL-00001" summary="redis">
       <created>1545786874226</created>
@@ -925,7 +938,14 @@
       <option name="project" value="LOCAL" />
       <updated>1548134199101</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="JVM底层原理">
+      <created>1548148826989</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1548148826989</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -958,7 +978,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167320000" />
+    <option name="totallyTimeSpent" value="171703000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-189" width="1936" height="1056" extended-state="6" />
@@ -1137,28 +1157,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LINUX.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javabasic/src/com/javabasic/bytecode/ByteCodeSample.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DB.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="442">
-            <caret line="105" column="29" lean-forward="true" selection-start-line="105" selection-start-column="29" selection-end-line="105" selection-end-column="29" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1183,6 +1185,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/img/classloader.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javabasic/src/com/javabasic/reflect/loadDiff.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/REDIS.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1193,23 +1205,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javabasic/src/com/javabasic/reflect/ReflectSample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="30" column="43" lean-forward="true" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/classloader.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/javabasic/src/com/javabasic/reflect/Robot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="29" />
+        <state relative-caret-position="132">
+          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
           <folding>
             <element signature="e#297#298#0" expanded="true" />
             <element signature="e#349#350#0" expanded="true" />
@@ -1219,20 +1218,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javabasic/src/com/javabasic/reflect/loadDiff.java">
+    <entry file="file://$PROJECT_DIR$/javabasic/src/com/javabasic/reflect/ReflectSample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="507">
+          <caret line="27" column="37" lean-forward="true" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LINUX.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DB.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1192">
+            <caret line="105" column="29" lean-forward="true" selection-start-line="105" selection-start-column="29" selection-end-line="105" selection-end-column="29" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JVM.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="431">
-            <caret line="97" column="49" selection-start-line="97" selection-start-column="49" selection-end-line="97" selection-end-column="49" />
+          <first_editor relative-caret-position="517">
+            <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javabasic/src/com/javabasic/jvm/model/Fibonacci.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
         </state>
       </provider>
     </entry>
