@@ -30,7 +30,17 @@
 ### 9.如何实现处理线程的返回值
 实现的方式3种
 1. 主线程等待法
-2.
+>> 优点: 代码简单
+>> 缺点: 需要代码完成循环等待, 如果等待变量过多, 会导致代码异常臃肿. 循环多久也不确定.没办法更精准的控制
+
+2. 使用Thread类的join()阻塞当前线程以等待子线程处理完毕.
+>> 优点: 代码简单
+>> 缺点: 粒度不够细
+
+3.通过Callable接口实现: 通过FutureTask Or线程池获取.
+
+>>线程池的优势: 提交多个实现callable的方法的类, 让线程池并发去处理结果.方便统一管理
+
 
 
 
@@ -38,3 +48,55 @@
 * 构造函数传参
 * 成员变量传参
 * 回调函数传参
+
+
+### 10.线程的状态?
+* 新建:创建后尚未启动
+* 运行(Runnable): running和ready
+* 无限期等待(Waiting): 不会被分配CPU执行时间, 需要显式被唤醒
+>> 没有设置Timeout参数的Object.wait() 方法   
+>> 没有设置Timeout参数的Thread.join()方法   
+>> LockSupport.park()方法  
+* 限期等待(TimeWaiting):一定时间后系统自动唤醒
+>> Thread.sleep()方法
+>> 设置了Timeout参数的Object.wait()方法
+>> 设置了Timeout参数的Thread.join方法
+>> LockSupport.parkNanos()方法
+>> LockSupport.partUntil()方法
+* 阻塞(Blocked): 等待获取排他锁
+* 结束(Terminated): 已终止线程的状态, 线程已经结束执行.
+
+### 11.sleep和wait的区别?
+* 基本的差别
+>> sleep是Thread类的方法, wait是Object类中定义的方法  
+>> sleep可以在任何地方使用. wait只能在synchronized方法或者是synchronized块中使用  
+* 最主要的本质区别
+>> Thread.sleep只会让出CPU, 不会导致锁行为的改变
+>> Object.wait不仅让出CPU, 还会释放已经占有的同步资源锁.
+
+
+### 12.notify 和 notifyAll的区别?(可以用来唤醒无限期等待中的线程.wait())
+* notifyAll 会让所有处于等待池中的线程全部进入到锁池去竞争获取锁的机会.
+* notyfy 只会随机选取一个处于等待池中的线程进入锁池去竞争获取锁的机会.
+
+### 13.yield
+* 概念:当调用Thread.yield()函数时, 会给线程调度器一个当前线程愿意让出CPU使用的暗示,
+但是, 线程调度器可能会忽略这个暗示.(决定权在线程调度器)
+* yield对锁没有影响. 并不会让当前线程让出已经占用的锁.
+
+### 14.如何中断线程?
+* 已经被抛弃的方法: 
+>> stop() :由一个线程去停止另外一个线程, 暴力, 不安全  
+>> suspend() 和resume()方法  
+* 目前使用的方法: 
+>> 调用interrupt(), 通知线程应该中断了,类似yield, 也是一种暗示.
+>> 1.如果线程处于被阻塞状态, 线程会立即退出被阻塞状态, 抛出InterruptedException异常
+>> 2.如果线程出去正常活动状态, 那么会将该线程的中断标志设置为true.被设置中断的线程将继续正常运行,不受影响.
+
+
+*** 图片: 线程状态的总结
+
+
+
+
+
