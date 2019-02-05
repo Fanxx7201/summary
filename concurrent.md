@@ -99,7 +99,14 @@ public void add(String str1, String str2){
 **** 图片: 偏向锁, 轻量级锁, 重量级锁的对比
 
 ### 7.Synchronized和ReentrantLock的区别?
-1. ReentrantLock将锁对象化.
+回答:
+1. Synchronized是关键字, ReentrantLock是类
+2. ReentrantLock可以对获取锁的等待时间进行设置, 避免死锁
+3. ReentrantLock可以获取各种锁的信息
+4. ReentrantLock可以灵活地实现多路通知
+5. 机制: sync操作MarkWord, lock调用Unsafe类的park()方法
+
+* ReentrantLock将锁对象化.
 >> 判断是否有线程, 或者是某个特定线程, 在排队等待获取锁.
 >> 带超时的获取锁的尝试.
 >> 感知有没有成功获取锁.
