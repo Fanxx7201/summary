@@ -1,5 +1,5 @@
 
-HashMap
+HashMap (特别重要)
 
 ### 1.集合之Map
 ![1550217239121](C:\Users\Lenovo\AppData\Local\Temp\1550217239121.png)
@@ -22,3 +22,12 @@ HashMap
 ### 2.2 HashMap: 如何有效减少碰撞
 * 扰动函数: 促使元素位置分布均匀, 减少碰撞几率
 * 使用final对象, 并采用合适的equals()和hashCode()方法
+
+### 2..3 HashMap: 扩容的问题
+* 多线程环境下, 调整大小会存在条件竞争, 容易造成死锁
+* rehashing是一个比较耗时的过程
+
+### 2.4 HashTable
+* 早期java类库提供的哈希表的实现
+* 线程安全: 涉及到修改HashTable的方法, 使用synchronized修饰
+* 串行化的方式运行, 性能较差

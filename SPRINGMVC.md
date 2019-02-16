@@ -25,7 +25,7 @@
 
 ### Spring源码一定要看
 
-### Spring框架说明
+### Spring框架说明(需要一个截图)
 * Test: 单元测试
 * core container: Spring核心容器. 四部分是四个jar包. 要想使用spring核心容器最少要4个jar包
 * AOP: 面向切面编程
@@ -34,6 +34,12 @@
     > ORM: Spring对ORM的封装. Hibernate只是其中的一个.
     > JMS: 中间件
 
+### Spring执行过程
+1.根据配置文件创建spring容器
+
+2.根据配置文件的配置, 找到id和class, 根据class反射创建对象. 
+
+3.从容器中获取对象
 
 
 
