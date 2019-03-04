@@ -12,7 +12,7 @@
 
 * Java异常体系
 
-![1550110708333](C:\Users\Lenovo\AppData\Local\Temp\1550110708333.png)
+
 
 * 从概念角度解析Java的异常处理机制
 
