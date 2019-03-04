@@ -38,7 +38,8 @@
 ### 6.synchronized底层实现原理?
 * 实现synchronized的基础
 > java对象头(对象在内存中的布局包括对象头, 实例数据, 对象填充)
-**** 图片: 对象头的结构
+
+![Image text](https://github.com/Fanxx7201/summary/blob/master/img/%E5%AF%B9%E8%B1%A1%E5%A4%B4%E7%9A%84%E7%BB%93%E6%9E%84.png)
 > monitor: 每个java对象天生自带了一个看不见的锁.叫做内部锁.
 
 ### 6.1 什么是重入?
@@ -99,7 +100,7 @@ public void add(String str1, String str2){
 * 重量级锁
 
 
-**** 图片: 偏向锁, 轻量级锁, 重量级锁的对比
+![Image text](https://github.com/Fanxx7201/summary/blob/master/img/%E5%81%8F%E5%90%91%E9%94%81%2C%20%E8%BD%BB%E9%87%8F%E7%BA%A7%E9%94%81%2C%20%E9%87%8D%E9%87%8F%E7%BA%A7%E9%94%81%E7%9A%84%E5%AF%B9%E6%AF%94.png)
 
 ### 7.Synchronized和ReentrantLock的区别?
 回答:

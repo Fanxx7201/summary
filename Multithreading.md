@@ -30,16 +30,16 @@
 ### 9.如何实现处理线程的返回值
 实现的方式3种
 1. 主线程等待法
->> 优点: 代码简单
->> 缺点: 需要代码完成循环等待, 如果等待变量过多, 会导致代码异常臃肿. 循环多久也不确定.没办法更精准的控制
+> 优点: 代码简单
+> 缺点: 需要代码完成循环等待, 如果等待变量过多, 会导致代码异常臃肿. 循环多久也不确定.没办法更精准的控制
 
 2. 使用Thread类的join()阻塞当前线程以等待子线程处理完毕.
->> 优点: 代码简单
->> 缺点: 粒度不够细
+> 优点: 代码简单
+> 缺点: 粒度不够细
 
 3.通过Callable接口实现: 通过FutureTask Or线程池获取.
 
->>线程池的优势: 提交多个实现callable的方法的类, 让线程池并发去处理结果.方便统一管理
+>线程池的优势: 提交多个实现callable的方法的类, 让线程池并发去处理结果.方便统一管理
 
 
 
@@ -54,25 +54,25 @@
 * 新建:创建后尚未启动
 * 运行(Runnable): running和ready
 * 无限期等待(Waiting): 不会被分配CPU执行时间, 需要显式被唤醒
->> 没有设置Timeout参数的Object.wait() 方法   
->> 没有设置Timeout参数的Thread.join()方法   
->> LockSupport.park()方法  
+> 没有设置Timeout参数的Object.wait() 方法   
+> 没有设置Timeout参数的Thread.join()方法   
+> LockSupport.park()方法  
 * 限期等待(TimeWaiting):一定时间后系统自动唤醒
->> Thread.sleep()方法
->> 设置了Timeout参数的Object.wait()方法
->> 设置了Timeout参数的Thread.join方法
->> LockSupport.parkNanos()方法
->> LockSupport.partUntil()方法
+> Thread.sleep()方法
+> 设置了Timeout参数的Object.wait()方法
+> 设置了Timeout参数的Thread.join方法
+> LockSupport.parkNanos()方法
+> LockSupport.partUntil()方法
 * 阻塞(Blocked): 等待获取排他锁
 * 结束(Terminated): 已终止线程的状态, 线程已经结束执行.
 
 ### 11.sleep和wait的区别?
 * 基本的差别
->> sleep是Thread类的方法, wait是Object类中定义的方法  
->> sleep可以在任何地方使用. wait只能在synchronized方法或者是synchronized块中使用  
+> sleep是Thread类的方法, wait是Object类中定义的方法  
+> sleep可以在任何地方使用. wait只能在synchronized方法或者是synchronized块中使用  
 * 最主要的本质区别
->> Thread.sleep只会让出CPU, 不会导致锁行为的改变
->> Object.wait不仅让出CPU, 还会释放已经占有的同步资源锁.
+> Thread.sleep只会让出CPU, 不会导致锁行为的改变
+> Object.wait不仅让出CPU, 还会释放已经占有的同步资源锁.
 
 
 ### 12.notify 和 notifyAll的区别?(可以用来唤醒无限期等待中的线程.wait())
@@ -86,12 +86,12 @@
 
 ### 14.如何中断线程?
 * 已经被抛弃的方法: 
->> stop() :由一个线程去停止另外一个线程, 暴力, 不安全  
->> suspend() 和resume()方法  
+> stop() :由一个线程去停止另外一个线程, 暴力, 不安全  
+> suspend() 和resume()方法  
 * 目前使用的方法: 
->> 调用interrupt(), 通知线程应该中断了,类似yield, 也是一种暗示.
->> 1.如果线程处于被阻塞状态, 线程会立即退出被阻塞状态, 抛出InterruptedException异常
->> 2.如果线程出去正常活动状态, 那么会将该线程的中断标志设置为true.被设置中断的线程将继续正常运行,不受影响.
+> 调用interrupt(), 通知线程应该中断了,类似yield, 也是一种暗示.
+> 1.如果线程处于被阻塞状态, 线程会立即退出被阻塞状态, 抛出InterruptedException异常
+> 2.如果线程出去正常活动状态, 那么会将该线程的中断标志设置为true.被设置中断的线程将继续正常运行,不受影响.
 
 
 *** 图片: 线程状态的总结
@@ -102,24 +102,24 @@ JAVA内存模型(Java Memory Model)本身是一种抽象的概念, 并不真实�
 
 *** 图片: JMM
 * JMM中的主内存
->> 存储java实例对象
->> 包括成员变量, 类信息, 常量, 静态变量等等
->> 属于数据共享的区域, 多线程并发操作时会引发线程安全问题
+> 存储java实例对象
+> 包括成员变量, 类信息, 常量, 静态变量等等
+> 属于数据共享的区域, 多线程并发操作时会引发线程安全问题
 
 * JMM中的工作内存
->> 存储当前方法的所有本地变量信息, 本地变量对其他线程不可见
->> 字节码行号指示器, Native方法信息
->> 属于线程私有数据区域, 不存在线程安全问题
+> 存储当前方法的所有本地变量信息, 本地变量对其他线程不可见
+> 字节码行号指示器, Native方法信息
+> 属于线程私有数据区域, 不存在线程安全问题
 
 * JMM与java内存区域划分是不同的概念层次
->> JMM 描述的是一组规则, 围绕原子性, 有序性, 可见性展开
->> 相似点: 存在共享区域和私有区域
+> JMM 描述的是一组规则, 围绕原子性, 有序性, 可见性展开
+> 相似点: 存在共享区域和私有区域
 
 * 主内存与工作内存的数据存储类型以及操作方式归纳
->> 方法里的基本数据类型本地变量将直接存储在工作内存的栈帧结构中
->> 引用类型的本地变量: 引用存储在工作内存中, 实例存储在主内存中
->> 成员变量, static变量, 类信息均会被存储在主内存中
->> 主内存共享的方式是线程各拷贝一份数据到工作内存, 操作完成后刷新回主内存
+> 方法里的基本数据类型本地变量将直接存储在工作内存的栈帧结构中
+> 引用类型的本地变量: 引用存储在工作内存中, 实例存储在主内存中
+> 成员变量, static变量, 类信息均会被存储在主内存中
+> 主内存共享的方式是线程各拷贝一份数据到工作内存, 操作完成后刷新回主内存
 
 ### 15.1 JMM如何解决可见性问题?
 
@@ -134,8 +134,8 @@ JAVA内存模型(Java Memory Model)本身是一种抽象的概念, 并不真实�
 ### 15.3 什么是happens-before原则?
 * 是判断数据是否存在竞争, 线程是否安全的重要依据. 依靠这个原则可以解决两个线程是否存在冲突的重要依据.
 * A操作的结果需要对B操作的结果可见, 则A和B之间存在着happens-before关系
->> i = 1; //线程A执行   
->> j = i; //线程B执行
+> i = 1; //线程A执行   
+> j = i; //线程B执行
 
 ### 15.4 happens-before的八大原则
 1. 程序次序规则: 一个线程内, 按照代码顺序, 书写前面的操作先行发生于书写在后面的操作
@@ -202,39 +202,41 @@ public class VolatileSafe{
 
 ### 17. CAS(Compare and Swap)
 * 一种高效实现线程安全性的方法
->> 支持原子更新操作, 适用于计数器, 序列发生器等场景
->> 属于乐观锁机制, 号称lock-free
->> CAS操作失败时由开发者决定是继续尝试, 还是执行别的操作
+> 支持原子更新操作, 适用于计数器, 序列发生器等场景
+> 属于乐观锁机制, 号称lock-free
+> CAS操作失败时由开发者决定是继续尝试, 还是执行别的操作
 
 * CAS多数情况下对开发者来说是透明的
->> J.U.C的atomic包提供了常用的原子性数据类型以及引用、数组等相关原子类型和更新操作工具, 是很多线程安全程序的首选   
->> Unsafe类虽提供CAS服务, 但因能够操纵任意内存地址读写而有隐患  
->> java9以后, 可以使用Variable Handle API来替代Unsafe
+> J.U.C的atomic包提供了常用的原子性数据类型以及引用、
+数组等相关原子类型和更新操作工具, 是很多线程安全程序的首选   
+> Unsafe类虽提供CAS服务, 但因能够操纵任意内存地址读写而有隐患  
+> java9以后, 可以使用Variable Handle API来替代Unsafe
 
 * 缺点
->> 若循环时间长, 则开销很大
->> 只能保证一个共享变量的原子操作
->> ABA问题 解决: AtomicStampedReference(自己了解一下)
+> 若循环时间长, 则开销很大
+> 只能保证一个共享变量的原子操作
+> ABA问题 解决: AtomicStampedReference(自己了解一下)
 
 ### 18.java线程池
 *** 图片: 线程池分类
 
 ### 18.1 Fork/Join框架
->> 把大任务分割成若干个小任务并行执行, 最终汇总每个小任务结果后得到大任务结果的框架.
->> Work-Stealing算法: 某个线程从其他队列里窃取任务来执行.
+> 把大任务分割成若干个小任务并行执行, 最终汇总每个小任务结果后得到大任务结果的框架.
+> Work-Stealing算法: 某个线程从其他队列里窃取任务来执行.
 
 ### 18.2 为什么要使用线程池?
->> 降低资源的消耗
->> 提高线程的可管理性
+> 降低资源的消耗
+> 提高线程的可管理性
 
 ### 18.3 Executor框架
 * 是根据一组执行策略调用, 调度、执行和控制异步任务的框架. 目的是提供一种将任务提交与任务如何
 运行分离开的机制.
 *** 图片: Executor框架
+![Image text](https://github.com/Fanxx7201/summary/blob/master/img/Executor%E6%A1%86%E6%9E%B6.png)
 
 ### 18.4 JUC的三个Executor接口?
 * Executor: 运行新任务的简单接口, 将任务提交和任务执行细节解耦.
->> 唯一的方法: execute
+> 唯一的方法: execute
 * ExecutorService: 具备管理执行器和任务生命周期的方法, 提交任务机制更完善
 
 * ScheduledExecutorService: 支持Future和定期执行任务.
@@ -247,14 +249,14 @@ public class VolatileSafe{
 * threadFactory: 创建新线程, Executors.defaultThreadTactory(); 这个
 新创建的线程会有相同的优先级, 并且是非守护线程, 也设置了线程的名称.  
 * handler: 线程池的饱和策略
->> AbortPolicy: 直接抛出异常, 这是默认策略  
->> CallerRunsPolicy: 用调用者所在的线程来执行任务  
->> DiscardOldestPolicy: 丢弃队列中靠最前的任务, 并执行当前任务  
->> DiscardPolicy: 直接丢弃任务  
->> 实现RejectedExecutionHandler接口的自定义handler  
+> AbortPolicy: 直接抛出异常, 这是默认策略  
+> CallerRunsPolicy: 用调用者所在的线程来执行任务  
+> DiscardOldestPolicy: 丢弃队列中靠最前的任务, 并执行当前任务  
+> DiscardPolicy: 直接丢弃任务  
+> 实现RejectedExecutionHandler接口的自定义handler  
 
 ### 18.6 线程池的状态
-*** 图片: 线程状态
+![Image text](https://github.com/Fanxx7201/summary/blob/master/img/%E7%BA%BF%E7%A8%8B%E7%8A%B6%E6%80%81.png)
 * RUNNING: 能接受新提交的任务, 并且也能处理阻塞队列中的任务
 * SHUTDOWN: 不再接受新提交的任务, 但可以处理存量任务
 * STOP: 不再接受新提交的任务, 也不处理存量任务
@@ -262,6 +264,6 @@ public class VolatileSafe{
 * TERMINATED: terminated()方法执行完后进去该状态
 
 ### 18.7线程池的大小如何选定?
->> CPU密集型: 线程数 = 按照核数或者核数 + 1 设定  
->> I/O密集型: 线程数 = CPU核数 * (1 + 平均等待时间 / 平均工作时间)  
+> CPU密集型: 线程数 = 按照核数或者核数 + 1 设定  
+> I/O密集型: 线程数 = CPU核数 * (1 + 平均等待时间 / 平均工作时间)  
 

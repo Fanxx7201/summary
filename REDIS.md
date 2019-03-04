@@ -278,6 +278,7 @@ if(status == 1){
 
 ### 7.2BGSAVE原理
 ***** 图片: BGSAVE原理
+![Image text](https://github.com/Fanxx7201/summary/blob/master/img/BGSAVE%E5%8E%9F%E7%90%86.png)
 
 ### 7.3 Copy-on-write
 如果有多个调用者同时要求相同资源(如内存或者磁盘上的数据存储),

@@ -30,10 +30,7 @@
 2. 进行主体授权(SecurityManager)-->Authorizer授权器进行授权
 3. Realm域获取角色和权限数据
 
-### Shiro自定义Realm
 
-
-### Spring整合Shiro
 
 
 

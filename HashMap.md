@@ -2,12 +2,11 @@
 HashMap (特别重要)
 
 ### 1.集合之Map
-![1550217239121](C:\Users\Lenovo\AppData\Local\Temp\1550217239121.png)
+
 
 ### 2.HashMap, HashTable, ConccurentHashMap
 * HashMap(java 8 以前) :数组+链表实现, 结合了两者的优势. 非synchroized, 效率高.
-![1550217764970](C:\Users\Lenovo\AppData\Local\Temp\1550217764970.png)
-![1550217839019](C:\Users\Lenovo\AppData\Local\Temp\1550217839019.png)
+
 
 ### 2.1HashMap: put方法的逻辑
 1. 如果HashMap未被初始化过,则初始化
