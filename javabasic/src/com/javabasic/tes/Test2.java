@@ -40,7 +40,7 @@ public class Test2 {
     }
 
     public static void main(String[] args) {
-        int[] array = {1,2,3,1,0,2,5,3,4};
+        int[] array = {1,3,4,2,1};
         int duplicate = dup(array);
         System.out.println("重复的数字为: " + duplicate);
     }
